@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xubin Li, PhD – Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Optional: Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #0f6abf;
+      --accent-soft: #e6f1fb;
+      --text-main: #222;
+      --text-muted: #555;
+      --bg: #ffffff;
+      --border: #e0e0e0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    .site-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      margin-left: 16px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    nav a.active {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 3px;
+    }
+
+    .hero {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
+
+    .hero-main {
+      flex: 2;
+    }
+
+    .hero h1 {
+      margin: 0 0 4px;
+      font-size: 2rem;
+    }
+
+    .hero-subtitle {
+      margin: 0 0 16px;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .hero p {
+      margin-top: 0;
+    }
+
+    .hero-aside {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-photo {
+      width: 220px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      object-fit: cover;
+    }
+
+    .btn-row {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      background: white;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn:hover {
+      background: var(--accent-soft);
+    }
+
+    .btn.primary:hover {
+      background: #0c5496;
+    }
+
+    .social {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .social a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      margin-top: 4px;
+      padding-left: 20px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 12px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+      .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+      .hero-aside {
+        text-align: left;
+      }
+      .hero-photo {
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="site-title">Xubin Li Lab</div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="code.html">Code</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-main">
+          <h1>Xubin Li, PhD</h1>
+          <p class="hero-subtitle">
+            Instructor (Research Faculty), MD Anderson Cancer Center · Cancer genomics & immunotherapy
+          </p>
+
+          <p>
+            I am currently on the job market seeking an Assistant Professor position.
+            I am an Instructor (research faculty) in Dr. Michael Green’s lab at 
+            MD Anderson Cancer Center. My research focuses on decoding spatial coordination 
+            and temporal co-evolution of tumor ecosystems through genomics and machine learning 
+            to transform cancer immunotherapy.
+          </p>
+
+          <div class="btn-row">
+            <!-- TODO: update this link to your actual CV path -->
+            <!-- <a href="files/Xubin_Li_CV.pdf" class="btn primary" target="_blank" rel="noopener">
+              Download CV
+            </a> -->
+            <a href="research.html" class="btn">Research overview</a>
+          </div>
+
+          <div class="social">
+            <!-- TODO: replace # with your real profile URLs -->
+            <span>Find me online:</span>
+            <a href="https://scholar.google.com/citations?user=nCMqP_MAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <!-- <a href="https://github.com/xligroup" target="_blank" rel="noopener">GitHub</a> -->
+            <!-- <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a> -->
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <!-- TODO: put your actual photo in the repo and update the src path -->
+          <img src="images/xubin_li.jpg" alt="Photo of Xubin Li" class="hero-photo">
+        </aside>
+      </section>
+
+      <section>
+        <h2>Education and Training</h2>
+        <ul>
+          <li><strong>2016</strong> – PhD, Biophysics, Florida State University</li>
+          <li><strong>2017–2021</strong> – Postdoc, Bioinformatics, MD Anderson Cancer Center</li>
+          <li><strong>2022–Present</strong> – Instructor (Research Faculty), MD Anderson Cancer Center</li>
+        </ul>
+
+        <h2>Honors and Awards</h2>
+        <ul>
+          <li><strong>2016</strong> – The Chemical Computing Group Excellence Award, American Chemical Society</li>
+          <li><strong>2022</strong> – The Wall of Science, MD Anderson Cancer Center</li>
+        </ul>
+
+        <h2>Strengths</h2>
+        <ul>
+          <li>
+            <strong>Strong record of impactful cancer research</strong> — focused on cancer genomics and 
+            immunology, with recent first-author publications in <em>Cancer Cell</em> (×2), 
+            <em>Cancer Discovery</em>, and <em>Cell Reports Medicine</em>, and multiple applications in 
+            immune modulating therapies and CAR T cell engineering.
+          </li>
+          <li>
+            <strong>Interdisciplinary and quantitative expertise</strong> — integrating cancer biology, 
+            machine learning, and biophysics for data-driven biological discovery 
+            (spatial multi-omics, AI-powered virtual tumor models).
+          </li>
+          <li>
+            <strong>Highly collaborative and poised for (multi-)PI funding</strong>.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Xubin Li · xligroup.github.io
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

@@ -301,6 +301,53 @@
           </div>
         </div>
       </div>
+
+      <h2>Biophysics</h2>
+      
+      <div class="section-block">
+        <div class="section-content">
+          <h3>Gaussian Kernel Monte Carlo Resampling Method (Li et al. <i>Journal of Chemical Physics</i> 2025)</h3>
+          <ul>
+            <li>Gaussian kernel Monte Carlo (GKMC) resampling is a robust approach for high-quality free energy surface construction.</li>
+            <li>The target free energy surface is mapped as the sum of local Gaussian basis functions; the height of each Gaussian basis function is recursively obtained through MC resampling of the simulation data.</li>
+            <li>The smooth free energy surfaces accurately represent simulated probability distributions.</li>
+            <li>Because the data noise is effectively removed, the local free-energy features are constructed much more accurately and informatively.</li>
+          </ul>
+          <div style="text-align: center; margin: 24px 0;">
+            <img src="images/proj_summary_gkmc.png" 
+              alt="proj_summary_gkmc"
+              style="width: 100%; 
+              /* max-width: 750px;  */
+              border-radius: 8px; 
+              box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block">
+        <div class="section-content">
+          <h3>Generalized Orthogonal Space Tempering Method (Lu, Li et al. <i>Journal of Chemical Theory and Computation</i> 2016)</h3>
+          <ul>
+            <li>
+              Generalized orthogonal space tempering is a physics-based sampling method for synchronous acceleration of molecular fluctuations associated with both protein conformational changes and slow environment responses.
+              <ul>
+                <li>In the Hamiltonian perturbation part, a solvent-accessible-surface- area-dependent term is introduced to implicitly perturb near-solute water−water fluctuations.</li>
+                <li>In the orthogonal space response part, the generalized force order parameter comprises a two-dimension order parameter set, in which essential solute−solvent and solute−solute components are separately treated.</li>
+              </ul>
+            <li>
+            <li>On the basis of a fully automated sampling protocol, the method enabled repetitive folding and unfolding of the solvated peptide within a single continuous trajectory and allowed for detailed constructions of Ala10 folding/unfolding free energy surfaces.</li>
+            <li>Our assessment analysis suggests that protein conformational changes are driven by the compensating and cooperative fluctuations of protein internal and protein−water interactions.</li>
+          </ul>
+          <div style="text-align: center; margin: 24px 0;">
+            <img src="images/proj_summary_gost.png" 
+              alt="proj_summary_gost.png"
+              style="width: 100%; 
+              /* max-width: 750px;  */
+              border-radius: 8px; 
+              box-shadow: 0 4px 18px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
       
     </main>
 
